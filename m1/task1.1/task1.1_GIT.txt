@@ -1,0 +1,28 @@
+a88844d HEAD@{0}: merge develop: Fast-forward
+0a15165 HEAD@{1}: checkout: moving from develop to master
+a88844d HEAD@{2}: commit: headers added to the index.html
+e25c395 HEAD@{3}: merge styles: Merge made by the 'recursive' strategy.
+0a15165 HEAD@{4}: checkout: moving from styles to develop
+0067ff3 HEAD@{5}: commit: styles were added
+a47787d HEAD@{6}: checkout: moving from develop to styles
+0a15165 HEAD@{7}: checkout: moving from styles to develop
+a47787d HEAD@{8}: checkout: moving from master to styles
+0a15165 HEAD@{9}: merge develop: Fast-forward
+5d8f146 HEAD@{10}: checkout: moving from develop to master
+0a15165 HEAD@{11}: commit (merge): resolving merge conflict
+772881e HEAD@{12}: merge images: Fast-forward
+77b57b6 HEAD@{13}: checkout: moving from styles to develop
+a47787d HEAD@{14}: checkout: moving from develop to styles
+77b57b6 HEAD@{15}: checkout: moving from styles to develop
+a47787d HEAD@{16}: checkout: moving from develop to styles
+77b57b6 HEAD@{17}: checkout: moving from styles to develop
+a47787d HEAD@{18}: commit: styles added to the index.html
+7b6c7b5 HEAD@{19}: commit: styles were created
+77b57b6 HEAD@{20}: checkout: moving from develop to styles
+77b57b6 HEAD@{21}: checkout: moving from images to develop
+772881e HEAD@{22}: commit: image links were added to the index.html
+71fa699 HEAD@{23}: commit: branch&folder images were created
+77b57b6 HEAD@{24}: checkout: moving from develop to images
+77b57b6 HEAD@{25}: commit: index.html created
+5d8f146 HEAD@{26}: checkout: moving from master to develop
+5d8f146 HEAD@{27}: commit (initial): init commit
