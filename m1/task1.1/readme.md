@@ -4,7 +4,7 @@ sudo apt update && sudo apt upgrade && sudo apt -y install git
 ```
 Configuring global settings:
 ```
-git config user email mjee245@gmail.com && git config user name mJeedx
+git config user.email mjee245@gmail.com && git config user.name mJeedx
 ```
 Next we need to create a GitHub account. I will use my early created account.
 
