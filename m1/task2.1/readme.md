@@ -55,23 +55,47 @@ Bridged network mode connect VM to a main interface connected with router. So VM
 VBoxManage is the CLI for virtualBox, allows managing virtual machines. 
 
 ```VBoxManage showvminfo <VM_vmname>``` gives you all of the information about VM
+
 ```VBoxManage createvm --name <VM_name> --register``` creates new VM
+
 ```VBoxManage startvm <VM_name>``` starts VM
+
 ```VBoxManage clonevm <VM_name> --name=<new_VM_name> --register --mode=all``` clones VM
 
 
 Part 3. VAGRANT
 
+Vagrant - software which gives you possibility quickly create virtual machines for testing. Vagrant like a Docker for 1-st type virtualization.
+To start using Vagrant you need to download it from the official website and install it.
+
+Next, create folder for Vagrant, init Vagrant box start Vagrant box:
+
+```
+mkdir vagrant_test
+vagrant init hashicorp/precise64
+vagrant up
+
+```
+
+![3.1](screenshots/3.1.jpg)
+
+Connect to the VM using putty on "localhost:2200" and show current date and time
+
+![3.2](screenshots/3.2.jpg)
+
+Stop and delete the created VM:
+
+```
+vagrant halt
+vagrant destroy
+```
+
+![3.3](screenshots/3.3.jpg)
+
+
+//TODO make test env by vagrant 
 
 
 
-
-
-
-
-
-
-
-
-I often look for more effectively way to remember some tips and notes about last к новоизученному материалу так, чтоб они были всегда легкодоступными. И тут я заметил, что уже 4-й раз возвращаюсь подсмотреть некоторые подсказки в свой конспект к прошлому уроку. Таким боразом я сделал для себя вики, которая всегда под рукой. Спасибо Вам! Теперь я буду более терпимым к этому "тупому логгированию и так очевидных вещей".
+P.S. Я всегда ищу для себя более эффективные способы усвоения материала и оставляю себе подсказки к новоизученому материалу так, чтоб они были всегда легкодоступными. И тут я заметил, что уже 4-й раз возвращаюсь подсмотреть некоторые подсказки в свой конспект к прошлому уроку(1.1). Таким образом я сделал для себя вики, которая всегда под рукой. Спасибо авторам курса за то, что я вынужден писать эти отчеты. Теперь я буду более терпимым к этому "тупому логгированию и так очевидных вещей".
 Хотя если так разобраться - здесь ничего нового. Это просто конспект, как в тетради, только с картинками и на гитхабе. Как бы там не было дальше - для меня этот курс уже прошел не зря.
