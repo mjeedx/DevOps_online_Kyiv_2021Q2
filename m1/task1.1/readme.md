@@ -1,47 +1,45 @@
-Сперва обновляем систему и устанавливаем Git:
+First of all we need to upgrade system and install Git:
 ```
 sudo apt update && sudo apt upgrade && sudo apt -y install git
 ```
-Настраиваем глобальные настроки Гита:
+Configuring global settings:
 ```
-git config user email mjee245@gmail.com && git config user name mJeedx
+git config user.email mjee245@gmail.com && git config user.name mJeedx
 ```
-Нужно создать аккаунт на Github. Я использую свой, уже существующий. 
-Создаем приватный репозиторий с названием DevOps_online_Kherson_2021Q2
+Next we need to create a GitHub account. I will use my early created account.
 
-Затем в корневой директории проекта, вместо инициализации клонирую пустой репозиторий: 
+After we create a new repository with name DevOps_online_Kherson_2021Q2
+
+Clone the repository to the project root directory:
 ```
 git clone git@github.com:mjeedx/DevOps_online_Kherson_2021Q2.git
 ```
-Дальше создаем папку, в которой будут выпоняться все манипуляции касательно данного урока и переходим в неё:
+Create folder for all next manipulations:
 ```
 mkdir -p DevOps_online_Kherson_2021Q2/m1/task1.1/
 cd DevOps_online_Kherson_2021Q2/m1/task1.1
 ```
-Создаем пустой readme.txt файл:
+Make empty readme file:
 ```
 touch readme.txt
 ```
-Добавляем файл в индекс и коммитим:
+Add file to the index and commit:
 ```
 git add .
 git commit -m "init commit"
 ```
-Создаем ветку develop и переходим в неё:
-
+Create develop branch, chechout on it:
 ```
 git branch develop
 git checkout develop
 ```
-
-Создаем пустой index.html и коммитим:
+Create empty index.html file. Commit:
 ```
 touch index.html
 git add .
 git commit -m "index.html was created"
 ```
-
-Создаем ветку images, переходим в неё. Создадим одноименную папку и в неё скачаем несколько изображений. Коммитим:
+Create branch "images", checkouton it. Create folder and put few images into it. Commit:
 ```
 git checkout -b images
 mkdir images && cd images
@@ -51,14 +49,14 @@ wget https://upload.wikimedia.org/wikipedia/commons/4/47/B-2_Spirit_original.jpg
 git add .
 git commit -m "branch and folder with images were created"
 ```
-В index.html создадим скелет страницы и добавим на неё изображения, коммитим:
+Edit index.html, add page sceleton and images. Commit:
 ![1](screenshots/1.jpg)
 ```
 git add .
 git commit -m "image links were added to the index.html"
 ```
 
-Вернемся в develop ветку, созадим ветку styles, папку и файл со стилями, коммитим:
+Go back to the "develop" branch. Create "styles" branch and folder with same name. Add styles.css, commit:
 ```
 git checkout develop
 git checkout -b styles
@@ -68,19 +66,20 @@ git add .
 git commit -m "styles were created"
 ```
 
-Подключаем стили в index.html файл, коммитим, возвращаемся в develop ветку.
+Add link to styles into index.html file, commit. Go back develop branch:
 ![2](screenshots/2.jpg)
 ```
 git add . 
 git commit -m "styles added to the index.html"
 git checkout develop
 ```
-Выполняем слияние image и style веток с develop:
+Merge "images" and "styles" branches with "develop":
 ```
 git merge images
 git merge styles
 ```
-В результате чего получили merge conflict в index.html (кто бы мог подумать!). Устраняем конфликт, коммитим, тем самым завершаем слияние веток:
+Wow, we got a merge conflict in index.html. The conflict was resolved, commit, merge again: 
+
 * Before conflict:
 
 ![3a](screenshots/3a.jpg)
@@ -91,18 +90,22 @@ git merge styles
 git add .
 git commit -m "resolving merge conflict"
 ```
-Переключаемся  в master, проводим слияние с develop веткой:
+Switch to master, merge develop:
 ```
 git checkout master
 git merge develop
 ```
-Осталось навести немного красоты в стилях и сделать страницу более опрятной, после чего провести слияние с develop после тестов с master. После пушим всё в Github:
+Next, we have to add some styles to make the page more orderly. Commit, merge with master, push to the GitHub:
 ```
 git push origin --all
 ```
-Далее сохраняем лог ссылок на HEAD в файл:
+![4](screenshots/4.jpg)
+Finnaly Then we are saving reflog into a file. Committing and pushing to the GitHub:
 ```
 git reflog >> task1.1_GIT.txt
 ```
 
-
+P.S. What is DevOps? In my mind DevOps is a way of designing of infrastructure and cooperation.
+Teams of developers, testing and operations work together to get the synergy effect. 
+So we have to get stable and predictable system with less count of failures and crashes.
+As a result it provides to release code more often however to consume less resources 
