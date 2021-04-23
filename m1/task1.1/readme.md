@@ -39,7 +39,7 @@ touch index.html
 git add .
 git commit -m "index.html was created"
 ```
-Create branch "images", checkouton it. Create folder and put few images into it. Commit:
+Create branch "images", checkout on it. Create folder and put few images into it. Commit:
 ```
 git checkout -b images
 mkdir images && cd images
