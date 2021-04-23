@@ -86,4 +86,4 @@ Task5.3 Part2
 
 4. Below I made port forwarding of tcp/22 on the host machine to the tcp/2222 on the guest machine:
 
-![1](screenshots/2.3.jpg)
+![1](screenshots/2.4.jpg)
