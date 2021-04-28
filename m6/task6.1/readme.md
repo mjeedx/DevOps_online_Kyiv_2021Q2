@@ -1,6 +1,6 @@
 task 6.1 
 
-1. Create cheme according to task.
+1. Create scheme according to task.
 
 2. VM2 has one interface (internal), VM1 has 2 interfaces (NAT and internal). VM2 has an access to the Internet through VM1:
 
@@ -14,7 +14,7 @@ to enable traffic forwarding among interfaces, uncomment "net.ipv4.ip_forward = 
 
 ![1](screenshots/6.4.jpg)
 
-5. To determine, which resource has an IP address 8.8.8.8, use: 
+5. Determine, which resource has an IP address 8.8.8.8, use: 
 `dig -x 8.8.8.8`
 
 ![1](screenshots/6.5.jpg)

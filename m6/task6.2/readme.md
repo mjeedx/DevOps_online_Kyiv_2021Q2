@@ -11,7 +11,7 @@ next you have to add a default route:
 
 Also you can use DHCP DNSMASQ server. We'll configure it on step 4. 
 
-3. Ñhecking IP addresses and internet access:
+3. Checking IP addresses and internet access:
 
 ![1](screenshots/3.jpg)
 
