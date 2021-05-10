@@ -1,12 +1,13 @@
 task7.1
-####Part A ####
+
+###Part A ###
 1. When starting without parameters, it will display a list of possible keys and their description.
   - The --all key displays the IP addresses and symbolic names of all hosts in the current subnet
   - The --target key displays a list of open system TCP ports.
 
 ![1](screenshots/1.1.jpg)
 
-####Part B####
+###Part B###
 
 1. To watch from which IP were most requests run next code:
 
