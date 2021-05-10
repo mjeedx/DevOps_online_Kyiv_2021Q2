@@ -27,9 +27,9 @@ task7.1
 
 ![1](screenshots/2.3.jpg)
 
-4. We can conclude that when user opens non-existent page, he takes code 302 and get redirrect to 404 page.
+4. To watch non-existent pages, we have to filter response with 404 code.
 
-`grep 302 apache_logs.txt | awk '{print $7 "\t" $9}'`
+`grep " 404 " example_log.log | awk '{print $7 "\t" $9}'`
 
 ![1](screenshots/2.4.jpg)
 
